@@ -1,4 +1,4 @@
-package apple;
+package org.example.apple;
 
 import com.codeborne.selenide.ElementsCollection;
 import lombok.extern.slf4j.Slf4j;

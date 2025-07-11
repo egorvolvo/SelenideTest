@@ -1,4 +1,4 @@
-package SkillboxTest;
+package org.example.skillbox;
 
 import com.codeborne.selenide.SelenideElement;
 
