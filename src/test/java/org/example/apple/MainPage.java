@@ -1,4 +1,4 @@
-package apple;
+package org.example.apple;
 
 import com.codeborne.selenide.Selenide;
 import com.codeborne.selenide.SelenideElement;

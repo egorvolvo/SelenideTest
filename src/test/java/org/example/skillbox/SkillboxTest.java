@@ -1,6 +1,6 @@
-package SkillboxTest;
+package org.example.skillbox;
 
-import base.BaseTest;
+import org.example.base.BaseTest;
 import org.junit.jupiter.api.Test;
 import static org.assertj.core.api.Assertions.assertThat;
 

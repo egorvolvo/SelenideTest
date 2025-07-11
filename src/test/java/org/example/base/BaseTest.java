@@ -1,4 +1,4 @@
-package base;
+package org.example.base;
 import com.codeborne.selenide.Configuration;
 import com.codeborne.selenide.Selenide;
 import org.junit.jupiter.api.AfterEach;
@@ -8,7 +8,7 @@ import org.openqa.selenium.chrome.ChromeOptions;
 
 public abstract class BaseTest {
 
-    @Test
+
     public  void setUp(){
         Configuration.browser = "chrome";
         Configuration.pageLoadTimeout = 60_000;

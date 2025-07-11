@@ -1,8 +1,8 @@
-package apple;
-import base.BaseTest;
-import org.junit.jupiter.api.Test;
+package org.example.apple;
 
-import static org.assertj.core.api.Assertions.assertThat;
+import org.example.base.BaseTest;
+import org.assertj.core.api.Assertions;
+import org.junit.jupiter.api.Test;
 
 public class AppleTest  extends BaseTest {
     private final static String BASE_URL = "https://appleinsider.ru/";
@@ -10,11 +10,10 @@ public class AppleTest  extends BaseTest {
     private final static String EXPECTED_WORD = "iphone-12";
     @Test
     public void checkHref(){
-        MainPage mainPage = new MainPage(BASE_URL);
-        assertThat(mainPage
+       MainPage mainPage = new MainPage(BASE_URL);
+        Assertions.assertThat(mainPage
                 .search(SEARCH_STRING)
                 .getHrefFromFirstArticle()
                 .contains(EXPECTED_WORD)).isTrue();
-
     }
 }
